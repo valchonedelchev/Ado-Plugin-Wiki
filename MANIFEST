@@ -1,0 +1,22 @@
+Build.PL
+Changes
+lib/Ado/Plugin/Wiki.pm
+MANIFEST			This list of files
+t/plugin/wiki/00-load.t
+t/plugin/wiki/boilerplate.t
+t/plugin/wiki/manifest.t
+t/plugin/wiki/pod-coverage.t
+t/plugin/wiki/pod.t
+
+lib/Ado/Control/Wiki.pm
+lib/Ado/Plugin/Wiki.pm
+lib/Ado/Model/WikiPages.pm
+MANIFEST			This list of files
+MANIFEST.SKIP
+README.md
+LICENSE
+README.md
+etc/plugins/wiki/install-0.01.sql
+etc/plugins/wiki/data-0.01.sql
+etc/plugins/wiki/uninstall-0.01.sql
+etc/plugins/wiki.conf
