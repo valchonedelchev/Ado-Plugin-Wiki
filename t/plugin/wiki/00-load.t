@@ -4,10 +4,8 @@ use strict;
 use warnings FATAL => 'all';
 use Test::More;
 
-plan tests => 1;
+use_ok('Ado::Plugin::Wiki');
+use_ok('Ado::Control::Wiki');
+use_ok('Ado::Model::WikiPages');
 
-BEGIN {
-    use_ok( 'Ado::Plugin::Wiki' ) || print "Bail out!\n";
-}
-
-diag( "Testing Ado::Plugin::Wiki $Ado::Plugin::Wiki::VERSION, Perl $], $^X" );
+done_testing();
