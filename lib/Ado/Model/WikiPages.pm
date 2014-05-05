@@ -1,5 +1,6 @@
 package Ado::Model::WikiPages;
 
+use 5.010001;
 use utf8;
 use Carp;
 use strict;
@@ -52,7 +53,7 @@ sub create {
 }
 
 sub by_url {
-    my $sql = $_[0]->SQL('SELECT') . ' WHERE url=?';
+    state $sql = $_[0]->SQL('SELECT') . ' WHERE url=?';
     return $_[0]->query($sql, shift);
 }
 
