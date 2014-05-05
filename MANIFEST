@@ -7,7 +7,6 @@ t/plugin/wiki/boilerplate.t
 t/plugin/wiki/manifest.t
 t/plugin/wiki/pod-coverage.t
 t/plugin/wiki/pod.t
-
 lib/Ado/Control/Wiki.pm
 lib/Ado/Plugin/Wiki.pm
 lib/Ado/Model/WikiPages.pm

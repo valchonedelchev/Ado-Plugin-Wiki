@@ -2,8 +2,9 @@ use 5.006;
 use strict;
 use warnings FATAL => 'all';
 use Module::Build;
+use Ado::BuildPlugin;
 
-my $builder = Module::Build->new(
+Ado::BuildPlugin->new(
     module_name          => 'Ado::Plugin::Wiki',
     license              => 'lgpl3',
     dist_author          => q{Valcho Nedelchev <weby@cpan.org>},
@@ -15,6 +16,4 @@ my $builder = Module::Build->new(
     add_to_cleanup       => ['Ado-Plugin-Wiki-*'],
     create_makefile_pl   => 'traditional',
     recursive_test_files => 1,
-);
-
-$builder->create_build_script();
+)->create_build_script();
